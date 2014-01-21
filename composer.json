@@ -1,0 +1,12 @@
+{
+    "name": "wpillar/landing",
+    "authors": [
+        {
+            "name": "Will Pillar",
+            "email": "me@willpillar.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "2.*"
+    }
+}
