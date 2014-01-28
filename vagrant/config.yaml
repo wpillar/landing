@@ -19,11 +19,11 @@ vagrantfile-local:
                     VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root: 1
         provision:
             puppet:
-                manifests_path: puphpet/puppet
+                manifests_path: vagrant/puppet
                 manifest_file: manifest.pp
                 options:
                     - '--verbose'
-                    - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
+                    - '--hiera_config /vagrant/vagrant/puppet/hiera.yaml'
                     - '--parser future'
         synced_folder:
             Vy5GhivTaYsU:
@@ -59,7 +59,7 @@ apache:
             servername: landing.dev
             serveraliases:
                 - www.landing.dev
-            docroot: /var/www/landing
+            docroot: /var/www
             port: '80'
             setenv:
                 - 'APP_ENV dev'
